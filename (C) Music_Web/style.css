@@ -1,0 +1,387 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+  scroll-behavior: smooth;
+  }
+
+  .maxWidth{
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+
+  /* Nav Bar */
+
+  nav{
+  height: 5rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5) ;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background-color: #270082;
+  }
+  .navBar{
+  height: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  #navLogo{
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 700;
+  }
+  .navBar ul{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  }
+  .navBar ul li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1rem;
+  }
+  .navBar ul li{
+    border-bottom: 2px solid transparent;
+    padding: 2px 0px;
+  }
+  .navBar ul li:hover{
+    transition: 0.3s ease-in;
+    border-bottom: 2px solid white;
+  }
+  .menuBar{
+    color: white;
+    font-size: 1.6rem;
+    display: none;
+    padding-top: 6px;
+  }
+  .listItems{
+    transition: all .4s;
+  }
+
+
+/* Home Page */
+
+.homePage{
+  background-image: url("images/hero_image.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.homePage .homeText h1{
+  font-size: 96px;
+  font-weight: 700;
+}
+.homePage .homeText h3{
+  font-size: 32px;
+  font-weight: 700;
+  margin: 1.2rem 0;
+}
+.homePage .homeText p{
+  font-weight: 300;
+  line-height: 1.4;
+}
+.homePage .homeText h1 , h3, p{
+  transition: all 0.3s;
+}
+
+/* Music Section */
+
+#music{
+  height: 100vh;
+  padding-top: 3rem;
+  background-color: #281154;
+}
+
+.musicSec{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  color: white;
+}
+.musicLogo{
+  font-size: 24px;
+}
+.musicLogo span{
+  font-weight: 600;
+}
+.musicSec h4{
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.musicSec button{
+  background-color: #DC0000;
+  border: none;
+  color: #ffffff;
+  padding: 10px 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.musicSec button:hover{
+  transition: all 0.3s;
+  opacity: 0.8;
+}
+
+
+
+.musicSec h6{
+  font-size: 1rem;
+}
+.musicSec .mergeImg{
+  position: relative;
+  top: 400px;
+  margin-top: -400px;
+}
+.musicSec .mergeImg img{
+  width: 95%;
+}
+
+
+/* Music Text Setion  */
+
+.musicTextSec{
+  padding-top: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3rem;
+}
+.musicTextSec h3{
+  font-weight: 700;
+}
+.musicTextSec p{
+  line-height: 1.4;
+}
+.musicTextSec button{
+  font-size: 13.5px;
+  padding: 10px 14px;
+  color: white;
+  border: none;
+  background-color: #270082;
+  font-weight: 400;
+  cursor: pointer;
+}
+.musicTextSec button:hover{
+
+  transition: all 0.3s;
+  opacity: 0.92;
+
+}
+.musicImg img{
+  width: 80%;
+}
+
+
+/* Video Section */
+
+.videoSec{
+  border: 2px solid black;
+  background-image: url("images/video.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: centers;
+}
+.videoText{
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.videoText h3{
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.videoText p{
+  line-height: 1.4;
+}
+
+
+/* Card Section */
+
+.cardSec{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  padding: 4rem 0;
+}
+.cardText  , .cardText{
+  width: 50%;
+}
+.cardText{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 22px;
+  transition: 0.3s ease;
+}
+.cardText h3{
+  font-weight: 700;
+}
+.cardText p{
+  line-height: 1.4;
+}
+hr{
+  width: 100%;
+}
+.cardText button{
+  padding: 10px 16px;
+  border: none;
+  color: #fff;
+  background-color: #270082;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.cardText button:hover{
+
+  transition: all 0.3s;
+  opacity: 0.92;
+
+}
+
+/* Footer */
+
+footer{
+  background-color: #1b0058;
+}
+.foot{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 20px 0px;
+}
+.foot .box{
+  margin: 1.5rem;
+}
+.foot h4{
+  font-weight: 700;
+  padding-bottom: 12px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+}
+.foot li{
+  list-style: none;
+  line-height: 1.4;
+  cursor: pointer;
+}
+#copyright{
+  background-color: #270082;
+  color: white;
+  text-align: center;
+  padding: 22px 0px;
+}
+#overview , #music , #video , #giftcard{
+  scroll-margin-top: 5rem;
+}
+
+@media (max-width:935px) {
+
+  
+  .musicTextSec{
+    padding-top: 380px;
+  }
+  .cardSec{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .cardImg img{
+    width: 100%;
+  }
+  .cardSec .cardText{
+    width: 100%;
+    align-items: center;
+    padding: 0 8px;
+    text-align: center;
+  }  
+}
+@media (max-width: 768px){
+
+  .musicTextSec{
+    padding-top: 280px;
+  }
+/* Home Page    */
+  .homePage .homeText h1{
+    font-size: 76px;
+  }
+  .homePage .homeText h3{
+    font-size: 22px;
+  }
+  .homePage .homeText p{
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
+@media(max-width: 560px ){
+
+  .musicTextSec{
+    padding-top: 180px;
+  }
+/* Nav Bar    */
+  .navBar ul{
+    background-color: #1b0058;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    overflow: hidden;
+  }
+  .navBar ul li{
+    padding: 13px;
+  }
+  .menuBar{
+    display: block;
+  } 
+
+/* Home Page  */
+  .homePage .homeText h1{
+    font-size: 56px;
+  }
+  .homePage .homeText h3{
+    margin: 8px 0;
+    font-size: 16px;
+  }
+  .homePage .homeText p{
+    font-size: 9.5px;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 425px) {
+  .musicTextSec{
+  padding-top: 120px;
+}
+}
